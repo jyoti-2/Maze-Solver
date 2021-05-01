@@ -147,8 +147,7 @@ var R = {}; // the Recurrent library
   var netFromJSON = function(j) {
     var net = {};
     for(var p in j) {
-      if(j.hasOwnProperty(p))
-      {
+      if(j.hasOwnProperty(p)){
         net[p] = new Mat(1,1); // not proud of this
         net[p].fromJSON(j[p]);
       }
@@ -668,8 +667,8 @@ DPAgent.prototype = {
   },
   learn: function() {
     // perform a single round of value iteration
-    self.evaluatePolicy(); // writes this.V
-    self.updatePolicy(); // writes this.P
+    this.evaluatePolicy(); // writes this.V
+    this.updatePolicy(); // writes this.P
   },
   evaluatePolicy: function() {
     // perform a synchronous update of the value function
