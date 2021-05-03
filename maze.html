@@ -16,12 +16,14 @@ body {
   <font size = "10"
     face = " arial"
     color = "White"
-    <center>Learning Cycle: 1 </center>
+   <h1> <center> Learning Cycle: 1 </center> </h1>
   </font>
   
 </body>
+<center>
 <canvas id="GameBoardCanvas" width="600px" height="800px">
 </canvas>
+</center>
 <script>
 var gv_epoch = 0;      
     
@@ -62,7 +64,7 @@ function draw(){
     ctx.fillStyle="white";
     
     ctx.font = '32pt Arial';
-    ctx.fillText("Learning Cycle : " + gv_epoch , 10, 700);
+    
     
     ctx.strokeStyle = "#FF0000";
     ctx.strokeRect(0, 0, 600, 605);
