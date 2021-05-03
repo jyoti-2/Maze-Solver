@@ -7,12 +7,17 @@
 
 body {
   
-    background: rgb(30, 19, 180);
+    background: rgb(27, 91, 116);
     padding: 5px;
 }
 </style>
 </head>
 <body>
+  <font size = "10"
+    face = " arial"
+    color = "White"
+    <center>Learning Cycle: 1 </center>
+  </font>
   
 </body>
 <canvas id="GameBoardCanvas" width="600px" height="800px">
@@ -90,7 +95,7 @@ function draw(){
     //Draw the player
     ctx.beginPath();
     var half = blockSize/2;
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "orange";
     ctx.arc(player.x*blockSize+half, player.y*blockSize+half, half, 0, 2*Math.PI);
     ctx.fill();
 }
