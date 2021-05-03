@@ -4,14 +4,19 @@
 <head>
 <style>
 
-
 body {
     background: rgb(8, 6, 153);
     padding: 5px;
 }
 </style>
 </head>
-<canvas id="GameBoardCanvas" width="600px" height="800px">
+<body>
+  <h1> <center> Learning Cycle: 100 </center></h1>
+</body>
+<center>
+  <canvas id="GameBoardCanvas" width="600px" height="800px">
+</center>
+
 </canvas>
 <script>
 var gv_epoch = 0;      
@@ -63,7 +68,7 @@ function draw(){
     ctx.fillStyle="white";
     
     ctx.font = '32pt Arial';
-    ctx.fillText("Learning Cycle : " + gv_epoch , 10, 700);
+    
     
     ctx.strokeStyle = "#FF0000";
     ctx.strokeRect(0, 0, 600, 605);
